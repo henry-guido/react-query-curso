@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { producActions } from '..';
+import { productActions } from '..';
 
 interface Options {
   id: number;
@@ -14,7 +14,7 @@ export const useProduct = ({ id }: Options) => {
     isFetching,
   } = useQuery({
     queryKey: ['produtcs', id],
-    queryFn: () => producActions.getProductById(id),
+    queryFn: () => productActions.getProductById(id),
     staleTime: 1000 * 60 * 60,
   });
 

@@ -14,8 +14,9 @@ export { NewProduct } from './pages/NewProduct';
 export { WomensPage } from './pages/WomensPage';
 export type { Product } from './interfaces/product'
 export { productsApi } from './api/productsApi';
-export * as producActions from './services/actions';
+export * as productActions from './services/actions';
 export { useProduct } from './hooks/useProduct';
 export { useProducts } from './hooks/useProducts';
 export { usePrefetchProduct } from './hooks/usePrefetchProduct';
 export { ProductById } from './pages/ProductById';
+export { useProductMutation } from './hooks/useProductMutation';
