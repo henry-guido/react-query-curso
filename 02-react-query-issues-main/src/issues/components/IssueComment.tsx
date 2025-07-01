@@ -18,7 +18,7 @@ export const IssueComment: FC<Props> = ({ issue }) => {
             alt='User Avatar'
             className='avatar'
           />
-          <span className='mx-2'>Pandaiolo commented</span>
+          <span className='mx-2'>{issue.user.login}</span>
         </div>
         <div className='card-body text-dark'>
           <ReactMarkdown>{issue.body}</ReactMarkdown>
